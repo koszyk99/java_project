@@ -46,6 +46,19 @@ public class Main {
         tasks.add("Buy water");
 
         printAll(tasks);
+
+        Task t1 = new Task();
+        t1.name = "Buy juice";
+        t1.done = true;
+
+        Task t2 = new Task();
+        t2.name = "Buy water";
+        t2.done = true;
+
+        System.out.println(t1.name);
+        System.out.println(t1.done);
+        System.out.println(t2.name);
+        System.out.println(t2.done);
     }
 
     public static int sumList(List<Integer> list) {
@@ -61,5 +74,5 @@ public class Main {
         for(String task : tasks) {
             System.out.println(task);
         }
-    }
+    } 
 }
