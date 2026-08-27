@@ -47,18 +47,16 @@ public class Main {
 
         printAll(tasks);
 
-        Task t1 = new Task();
-        t1.name = "Buy juice";
-        t1.done = true;
+        Task t1 = new Task("Buy milk", false);
 
-        Task t2 = new Task();
-        t2.name = "Buy water";
-        t2.done = true;
+        Task t2 = new Task("Buy water", true);
 
-        System.out.println(t1.name);
-        System.out.println(t1.done);
-        System.out.println(t2.name);
-        System.out.println(t2.done);
+        System.out.println(t1.getName());
+        t1.setDone(true);
+        System.out.println(t1.isDone());
+        System.out.println(t2.getName());
+        t2.setDone(false);
+        System.out.println(t2.isDone());
     }
 
     public static int sumList(List<Integer> list) {
