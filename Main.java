@@ -57,6 +57,10 @@ public class Main {
         System.out.println(t2.getName());
         t2.setDone(false);
         System.out.println(t2.isDone());
+
+        Car c = new Car("Toyota");
+        c.drive();
+        c.honk();
     }
 
     public static int sumList(List<Integer> list) {

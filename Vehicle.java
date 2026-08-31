@@ -6,6 +6,6 @@ public class Vehicle {
     }
 
     public void drive() {
-        System.out.println(brand + "is driving");
+        System.out.println(brand + " is driving");
     }
 }
