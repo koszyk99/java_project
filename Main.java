@@ -61,6 +61,9 @@ public class Main {
         Car c = new Car("Toyota");
         c.drive();
         c.honk();
+
+        Movable m = new Car("BMW");
+        m.move();
     }
 
     public static int sumList(List<Integer> list) {
